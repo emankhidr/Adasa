@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 import AboutUs from './components/AboutUs'
 import Blog from './components/Blog'
 import Home from './components/Home'
@@ -10,7 +10,7 @@ import BlogDetails from './components/BlogDetails'
 
 function App() {
 
-  const routes = createBrowserRouter(
+  const routes = createHashRouter(
     [
       {
         path: '/',
