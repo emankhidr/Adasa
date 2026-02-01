@@ -1,0 +1,150 @@
+.our-blog {
+  position: relative;
+  overflow: hidden;
+}
+
+.our-blog::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 200px;
+  background: var(--main-color);
+  filter: blur(120px);
+  opacity: 0.2;
+  pointer-events: none;
+}
+.our-blog {
+  min-height: 10vh;
+  padding: 50px 0;
+  color: white;
+}
+.blog-title {
+  color: white;
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.blog-title span {
+  background: var(--second-gardient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+p.blog-content {
+  color: var(--main-gray);
+  font-size: 20px;
+  text-align: center;
+  max-width: 50%;
+}
+.search-box {
+  position: relative;
+  max-width: 300px;
+}
+
+.search-box input {
+  width: 100%;
+  background: rgb(22,22,22);
+  border: 1px solid rgb(38,38,38);
+  border-radius: 14px;
+  color: white;
+  font-size: 15px;
+  transition: .3s ease;
+}
+
+.search-box input:focus {
+  border-color: var(--main-color);
+}
+
+.search-icon {
+  position: absolute;
+  left: 0px;
+  top: 80%;
+  transform: translateY(-50%);
+  color: var(--light-gray);
+  font-size: 16px;
+}
+
+.filter-btn {
+  background: rgb(22,22,22);
+  border: 1px solid rgb(38,38,38);
+  color: var(--light-gray);
+  padding: 0px 15px;
+  border-radius: 18px;
+  transition: .3s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--main-color);
+  color: white !important;
+}
+
+.filter-btn.active {
+  background: var(--third-gradient);
+  color: white;
+  border-color: transparent;
+}
+
+.search{
+    border-bottom: 1px solid rgb(38,38,38);
+}
+.display-way {
+  background: rgb(22,22,22);
+  border: 1px solid rgb(38,38,38);
+  border-radius: 18px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.view-btn {
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+
+.view-btn.active {
+  background: var(--main-color);
+  color: white;
+}
+
+.show-articles {
+  color: var(--light-gray);
+  margin: 0;
+  span{
+    font-weight: 700;
+    color: white;
+  }
+}
+
+.pagination {
+  direction: rtl;
+}
+
+.page-btn {
+  width: 44px;
+  height: 44px;
+  background: rgb(22,22,22);
+  border: 1px solid rgb(38,38,38);
+  border-radius: 12px;
+  color: white;
+  transition: all .3s ease;
+}
+
+.page-btn:hover {
+  border-color: var(--main-color);
+}
+
+.page-btn.active {
+  background: var(--main-color);
+  color: white;
+}

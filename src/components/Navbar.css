@@ -1,0 +1,90 @@
+
+.navbar {
+    background-color: rgba(10, 10, 10, 0.95); 
+    border-bottom: 1px solid rgb(38, 38, 38);
+    
+}
+
+.logo-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-left: 20px; 
+    transition: all .3s ease;
+}
+.logo-img:hover {
+    transform: scale(1.1);
+}
+.logo-content {
+    display: flex;
+    flex-direction: column; 
+}
+
+.logo-name {
+    font-size:20px;
+    font-weight: 700;
+    color: white;
+}
+
+.logo-text{
+    font-size: 12px;
+
+    color: var(--secondary-color);
+    margin: 0; 
+}
+
+
+.nav-links-container {
+    display: flex;
+    gap: 16px;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid rgb(38,38,38);
+    padding:10px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    color: var(--main-gray);
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link.active {
+    background: var(--main-gradient);
+    color: white;
+}
+
+.searchIcon {
+    width: 46px;
+    height: 46px;
+    color: var(--main-gray);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.searchIcon:hover {
+    color: var(--main-color);
+    background-color:rgb(22, 22, 22) ;
+    border-radius: 12px;
+}
+
+.btn-start {
+    background: var(--third-gradient);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+   
+}
+
+.btn-start:hover {
+    transform: translateY(-4px);
+    color: white !important;
+}
